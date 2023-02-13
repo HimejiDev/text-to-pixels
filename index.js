@@ -2,7 +2,7 @@ var range = document.getElementsByClassName("size")[0];
 var img = document.getElementsByClassName("img")[0];
 var text = document.getElementsByClassName("text")[0];
 var _value = document.getElementsByClassName("value")[0];
-var button = document.getElementsByClassName("button")[0];
+//var button = document.getElementsByClassName("button")[0];
 
 var pixelSize = range.value
 _value.innerHTML = range.value
