@@ -1,0 +1,27 @@
+.img {
+    /* background-color: rgb(0, 0, 0); */
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    overflow: hidden;
+}
+
+.pixel {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.value {
+    margin: 0;
+    padding: 0;
+}
+
+.size {
+    width: 100%;
+}
