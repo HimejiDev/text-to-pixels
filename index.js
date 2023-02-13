@@ -20,65 +20,65 @@ range.oninput = ({ target: { value } }) => {
     _value.innerHTML = value
 }
 
-button.onclick = function () {
-    var sqrt = Math.round(Math.sqrt(characters.length));
-    var found = false;
-    var amount = 0;
-    var num1;
-    var num2;
-    // console.log(sqrt);
-    // pixelSize = ;
-    // possible = [];
-    // for (let i = 0; i < characters.length/2; i++) {
-    //     console.log(`${i}:${characters.length} | ${(characters.length/i)%1 == 0}`);
-    //     if ((characters.length/i)%1 == 0)
-    //         possible.push(i);
-    // }
+// button.onclick = function () {
+//     var sqrt = Math.round(Math.sqrt(characters.length));
+//     var found = false;
+//     var amount = 0;
+//     var num1;
+//     var num2;
+//     // console.log(sqrt);
+//     // pixelSize = ;
+//     // possible = [];
+//     // for (let i = 0; i < characters.length/2; i++) {
+//     //     console.log(`${i}:${characters.length} | ${(characters.length/i)%1 == 0}`);
+//     //     if ((characters.length/i)%1 == 0)
+//     //         possible.push(i);
+//     // }
 
-    while (!found) {
-        neg = false
-        pos = false
+//     while (!found) {
+//         neg = false
+//         pos = false
 
-        if (Math.sqrt(characters.length)%1 == 0) {
-            found = true;
-            num1 = Math.sqrt(characters.length);
-        } else {
-            if ((characters.length/sqrt-amount)%1 == 0) // 1 minus
-                neg = true;
-            if ((characters.length/sqrt+amount)%1 == 0) // 1 plus
-                pos = true;
+//         if (Math.sqrt(characters.length)%1 == 0) {
+//             found = true;
+//             num1 = Math.sqrt(characters.length);
+//         } else {
+//             if ((characters.length/sqrt-amount)%1 == 0) // 1 minus
+//                 neg = true;
+//             if ((characters.length/sqrt+amount)%1 == 0) // 1 plus
+//                 pos = true;
 
-            if (neg && !pos) {
-                num1 = sqrt-amount;
-                found = true;
-            }
-            else if (!neg && pos) {
-                num2 = sqrt+amount;
-                found = true;
-            }
-            else if (neg && pos) {
-                num1 = sqrt-amount;
-                found = true;
-            }
-            else if (!neg && !pos)
-                amount += 1;
-        }
+//             if (neg && !pos) {
+//                 num1 = sqrt-amount;
+//                 found = true;
+//             }
+//             else if (!neg && pos) {
+//                 num2 = sqrt+amount;
+//                 found = true;
+//             }
+//             else if (neg && pos) {
+//                 num1 = sqrt-amount;
+//                 found = true;
+//             }
+//             else if (!neg && !pos)
+//                 amount += 1;
+//         }
 
-        console.log(neg);
-        console.log(pos);
-    }
+//         console.log(neg);
+//         console.log(pos);
+//     }
 
-    console.log(num1);
-    console.log(num2);
+//     console.log(num1);
+//     console.log(num2);
 
-    // var pixels = document.getElementsByClassName("pixel");
-    // for (let i = 0; i < pixels.length; i++) {
-    //     pixels[i].style.width = `${pixelSize}px`
-    //     pixels[i].style.height = `${pixelSize}px`
-    // }
+//     // var pixels = document.getElementsByClassName("pixel");
+//     // for (let i = 0; i < pixels.length; i++) {
+//     //     pixels[i].style.width = `${pixelSize}px`
+//     //     pixels[i].style.height = `${pixelSize}px`
+//     // }
 
-    // _value.innerHTML = pixelSize
-};
+//     // _value.innerHTML = pixelSize
+// };
 
 text.oninput = ({ target: { value } }) => {
     characters = value.split('');
